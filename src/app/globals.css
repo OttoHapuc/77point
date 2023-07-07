@@ -2,6 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@-webkit-keyframes flip-vertical-left {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+  }
+}
+@keyframes flip-vertical-left {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+  }
+}
+
+
+.rotate-vert-center {
+	-webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
 ::-webkit-scrollbar {
   width: 2px;
 }
@@ -9,11 +36,6 @@
 ::-webkit-scrollbar-thumb {
   background: #374137;
   border-radius: 50%;
-}
-
-* {
-  box-sizing: border-box;
-  overflow: hidden;
 }
 
 html,

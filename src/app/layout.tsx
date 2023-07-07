@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className={`pt-16 ${inter.className}`}>
+      <body className={`pt-20 ${inter.className}`}>
         <Header />
         {children}
       </body>

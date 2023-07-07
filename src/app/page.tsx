@@ -1,6 +1,10 @@
+import CarouselSession from "@/components/imagesSession";
+
+
 export default function Home() {
   return (
-    <main >
-    </main>
-  );
+    <>
+      <CarouselSession />
+    </>
+  )
 }

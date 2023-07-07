@@ -4,11 +4,6 @@ const nextConfig = {}
 module.exports = nextConfig
 module.exports = {
     images: {
-      remotePatterns: [
-        {
-          protocol: 'https',
-          hostname: 'i.imgur.com',
-        },
-      ],
+      domains: ['img.freepik.com', 'i.imgur.com'],
     },
   }
